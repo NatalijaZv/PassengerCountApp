@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background-image: url("station.jpg");
+    background-size: cover;
+    background-color:  #292F33;
+    background-blend-mode: multiply;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color:aliceblue;
+}
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 800;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-top:0;
+    margin-bottom: 0.7em;
+    position: relative;
+}
+h2::after{
+    content: "";
+    position: absolute;
+    width: 1.5em;
+    height: .1rem;
+    background: white;
+    top:4.5rem;
+    left: 0;  
+    right: 0;  
+    margin: 0 auto;
+}
+p{
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    font-size: 1.125rem;
+    
+}
+
+.btn {
+    
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.btn-increment{
+    
+    background: #ff7b25;
+    /* background: #00FF00; */
+    color:white;
+}
+.btn-save{
+    background:  grey;
+    color:white;
+}
+.btn-increment,
+.btn-save,
+.btn-reset{
+    cursor: pointer;
+    transition:  transform 150ms cubic-bezier(0.5,1,0.5,0); 
+}
+.btn-increment:hover,
+.btn-save:hover,
+.btn-reset:hover{
+    transform: scale(1.1);
+}
+.btn-reset{
+    background: white;
+}
+
